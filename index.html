@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+ 
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="description" content="temporizador estilo pomodoro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Focus Timer</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script type="module" src="src/main.js" defer></script>
+    </head>
+    
+    <body>
+
+        <div id="app" class="flex">
+
+            <button id="toggle-mode">
+                <span class="sr-only">dark mode ativado</span>
+                <i id="toggle-mode" class="ph ph-sun"></i>
+                <i id="toggle-mode" class="ph ph-moon"></i>
+            </button>
+
+            <div id="main" class="flex">
+
+                <div id="timer">
+                    <span id="minutes">00</span><span>:</span><span id="seconds">00<span>
+                </div>
+
+                <div id="controls-timer" class="flex">
+                    <button class="ph-fill ph-play" data-action="toggleRunning">
+                        <span class="sr-only">som de floresta</span>
+                    </button>
+                    <button class="ph-fill ph-pause" data-action="toggleRunning">
+                        <span class="sr-only">som de floresta</span>
+                    </button>
+                    <button class="ph-fill ph-stop" data-action="reset">
+                        <span class="sr-only">som de floresta</span>
+                    </button>
+                    <button class="ph-bold ph-plus" data-action="addFiveMinutes">
+                        <span class="sr-only">som de floresta</span>
+                    </button>
+                    <button class="ph-bold ph-minus" data-action="subFiveMinutes">
+                        <span class="sr-only">som de floresta</span>
+                    </button>
+                </div>
+    
+            </div>
+
+            <div id="controls-sound">
+                <button class="ph ph-tree"
+                data-action="forestSound">
+                    <span class="sr-only">som de floresta</span>
+                </button>
+                <button class="ph ph-cloud-rain"
+                data-action="rainSound">
+                    <span class="sr-only">som de floresta</span>
+                </button>
+                <button class="ph ph-storefront"
+                data-action="coffeeShopSound">
+                    <span class="sr-only">som de floresta</span>
+                </button>
+                <button class="ph ph-flame"
+                data-action="flameSound"></button>
+                    <span class="sr-only">som de floresta</span>
+                </button>
+            </div>
+
+        </div>
+
+        
+    </body>
+
+</html>
